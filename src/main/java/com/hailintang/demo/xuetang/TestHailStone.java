@@ -17,6 +17,8 @@ public class TestHailStone {
             System.out.println("length: "+res);
         }
         System.out.println("finished");
+        System.out.println(2%4);
+        System.out.println("b9e3b27b6262bf6e".hashCode() % 32);
     }
     public static int testHailStone(int n){
         int length = 1;

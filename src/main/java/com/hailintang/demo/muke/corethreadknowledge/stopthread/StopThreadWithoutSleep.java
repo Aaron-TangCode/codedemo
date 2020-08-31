@@ -5,7 +5,7 @@ package com.hailintang.demo.muke.corethreadknowledge.stopthread;
  * @date 2020/5/7 3:59 下午
  * @function 在没sleep或wait的状态下，停止线程
  */
-public class StopThreadWithoutSleep implements Runnable{
+public class  StopThreadWithoutSleep implements Runnable{
     @Override
     public void run() {
         int num = 0;

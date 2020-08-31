@@ -34,7 +34,7 @@ public class TestBase {
         producer.start();
         for (int i=0;i<10;i++){
             //创建消息
-            Message message = new Message("base","tag3",("helloword"+i).getBytes());
+            Message message = new Message("base1","tag3",("helloword"+i).getBytes());
             //发送消息
             SendResult result = producer.send(message);
 
@@ -62,7 +62,6 @@ public class TestBase {
         producer.setNamesrvAddr("localhost:9876");
 
         //启动
-
         producer.start();
 
         //创建消息

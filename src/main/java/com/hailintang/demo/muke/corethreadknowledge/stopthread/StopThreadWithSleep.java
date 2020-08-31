@@ -11,7 +11,8 @@ public class StopThreadWithSleep {
     public static void main(String[] args) throws InterruptedException {
         Runnable runnable = ()->{
             int num = 0;
-            while(!Thread.currentThread().isInterrupted()&&num<=300){
+//            while(!Thread.currentThread().isInterrupted()&&num<=300){
+            while(num<=300){
                 if(num%100==0){
                     System.out.println(num+"是100的倍数");
                 }
