@@ -34,7 +34,6 @@ public class MaxProfit_k {
                 //今天持有股票=max(昨天持有股票（休息），昨天不持有股票，但买了)
                 dp[i][tempK][1] = Math.max(dp[i - 1][tempK][1], dp[i - 1][tempK - 1][0] - prices[i]);
             }
-
         }
         //穷举n*k*2种状态
         return dp[n - 1][k][0];
