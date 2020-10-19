@@ -1,5 +1,7 @@
 package com.hailintang.demo.snowflake;
 
+import com.alibaba.fastjson.JSON;
+
 public class SnowflakedWorker {
     /** 开始时间截 (这个用自己业务系统上线的时间) */
     private final long twepoch = 1575365018000L;
@@ -113,5 +115,9 @@ public class SnowflakedWorker {
         long end = System.currentTimeMillis()-start;
         System.out.println(end);
         System.out.println(count);
+
+        System.out.println(JSON.toJSONString(idWorker));
+
+
     }
 }
