@@ -6,8 +6,8 @@ public class YoungGC {
     public static void main(String[] args) {
 
 //        dynamicAllocate();
-//        survivor_area();
-        bigObject();
+        survivor_area();
+//        bigObject();
 //        _15_year();
     }
 
@@ -40,21 +40,8 @@ public class YoungGC {
      * 大对象
      */
     public static void bigObject(){
-        //jvm配置：-XX:NewSize=10m
-        // -XX:MaxNewSize=10m
-        // -XX:InitialHeapSize=20m
-        // -XX:MaxHeapSize=20m
-        // -XX:SurvivorRatio=8
-        // -XX:PretenureSizeThreshold=3m
-        // -XX:MaxTenuringThreshold=15
-        // -XX:+UseParNewGC
-        // -XX:+UseConcMarkSweepGC
-        // -XX:+PrintGCDetails
-        // -XX:+PrintGCTimeStamps
-        // -Xloggc:bigobject.log
-        // eden
+        //jvm配置：-XX:NewSize=10m -XX:MaxNewSize=10m -XX:InitialHeapSize=20m -XX:MaxHeapSize=20m -XX:SurvivorRatio=8 -XX:PretenureSizeThreshold=3m -XX:MaxTenuringThreshold=15 -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:gc4.log
         byte[] array1 = new byte[2*_1MB];
-        // old
         byte[] array2 = new byte[3*_1MB];
     }
     /**
@@ -108,4 +95,7 @@ public class YoungGC {
         byte[] array3 = new byte[2*_1MB];//这里触发第一次minor gc
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e795e2c0bb966dcdc61501b2919f158ed3f33ae
