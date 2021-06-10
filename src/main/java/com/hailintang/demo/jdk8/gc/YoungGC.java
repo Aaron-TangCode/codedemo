@@ -59,18 +59,18 @@ public class YoungGC {
 
         array1 = null;
 
-        byte[] array3 = new byte[2*_1MB];//第一次minor gc，此时array2指向的对象1岁
+        byte[] array3 = new byte[2*_1MB];//第一次minor gc，此时array2指向的对象0岁
         array3 = new byte[2*_1MB];
         array3 = new byte[2*_1MB];
 
         array3 = null;
 
-        byte[] array4 = new byte[2*_1MB];//第二次minor gc，此时array2指向的对象2岁
+        byte[] array4 = new byte[2*_1MB];//第二次minor gc，此时array2指向的对象1岁
         array4 = new byte[2*_1MB];
         array4 = new byte[2*_1MB];
         array4 = null;
 
-        byte[] array5 = new byte[2*_1MB];//第三次minor gc，此时array2指向的对象3岁
+        byte[] array5 = new byte[2*_1MB];//第三次minor gc，此时array2指向的对象2岁
 
 
 
@@ -95,7 +95,4 @@ public class YoungGC {
         byte[] array3 = new byte[2*_1MB];//这里触发第一次minor gc
     }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 2e795e2c0bb966dcdc61501b2919f158ed3f33ae
