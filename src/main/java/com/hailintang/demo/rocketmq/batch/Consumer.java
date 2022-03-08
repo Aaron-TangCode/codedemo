@@ -29,6 +29,7 @@ public class Consumer {
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
                 for (int i = 0; i < list.size(); i++) {
                     MessageExt messageExt = list.get(i);
+
                     String msg = new String(messageExt.getBody());
 
                     System.out.println("消费结果:"+msg);
