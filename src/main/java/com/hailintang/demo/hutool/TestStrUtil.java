@@ -3,7 +3,6 @@ package com.hailintang.demo.hutool;
 import cn.hutool.core.util.StrUtil;
 import org.junit.Test;
 
-import java.util.Arrays;
 
 public class TestStrUtil {
     @Test
