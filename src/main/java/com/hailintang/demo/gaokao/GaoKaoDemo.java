@@ -88,7 +88,7 @@ public class GaoKaoDemo {
 
         List<UniversiteEntity> result = new ArrayList<>();
 
-        for(int i=1;i<2;i++){
+        for(int i=1;i<100;i++){
             List<String> list = new ArrayList<>();
             list.add(a+i+c+d);
             try {
